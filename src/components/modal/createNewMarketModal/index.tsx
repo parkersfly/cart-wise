@@ -1,5 +1,5 @@
 import { Modal } from "../"
-import { Plus } from "lucide-react"
+import { ImageUp, Plus } from "lucide-react"
 
 export function CreateNewMarketModal() {
   return (
@@ -22,6 +22,21 @@ export function CreateNewMarketModal() {
             type="text"
             placeholder="Ex: Atacadão"
           />
+        </div>
+
+        <div className="mt-5!">
+            <label 
+            htmlFor="marketPicture" 
+            className="relative text-xs text-zinc-500 flex justify-center items-center w-auto h-11 pl-5! shadow rounded-md border-zinc-200 border-solid border"
+            >
+              <ImageUp size={16} className="absolute left-4"/>
+              Adicionar uma foto
+            </label>
+            <input
+              id="marketPicture"
+              className="hidden"
+              type="file"
+            />
         </div>
 
         <button className="w-full relative mt-8! max-w-80 h-11 flex justify-center items-center shadow text-sm font-bold bg-amber-400 text-white rounded-lg hover:cursor-pointer"
