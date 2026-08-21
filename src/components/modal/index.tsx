@@ -3,6 +3,7 @@
 import { ModalContext } from "@/context/modal"
 import { X } from "lucide-react"
 import { useContext } from "react"
+import Form from 'next/form'
 
 interface ModalProps {
   title: string
@@ -22,9 +23,9 @@ export function Modal({ title, children }: ModalProps) {
           </button>
         </div>
 
-        <form className="space-y-4!">
+        <Form action="" className="space-y-4!">
           {children}
-        </form>
+        </Form>
       </div>
     </div>
   )

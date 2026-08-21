@@ -7,7 +7,7 @@ import { createContext, useState } from "react";
 //   setOpenModal: () => {}
 // }
 
-export const ModalContext = createContext({})
+export const ModalContext = createContext<any>({})
 
 export function ModalProvider({children}: {children: React.ReactNode}){
   const [openModal, setOpenModal] = useState(false)
